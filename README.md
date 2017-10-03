@@ -7,6 +7,16 @@
  - Implemented <b>KNN Algorithm</b> to learn the pattern in the sensor data, which has been used to recognize the user activity.
  
 ## Architecture and IoT setup
-| <img src="/Images/Pi Setup.jpg" width="250px" alt="IoT">  | <img src="/Images/Arch.PNG" width="622px" alt="Architecture"> |
+
+ - The IoT device is placed in the Robotics Lab in Dept. of Computer Science at IIT Guwahati.
+ - The IoT device is fitted with PIR, PING and LIGHT sensor. All these sensors gave us different sensor values of the student's activities performed in the lab.
+
+| <img src="/Images/Pi Setup.jpg" width="250px" alt="IoT">  | <img src="/Images/Arch.PNG" width="622px" alt="System Architecture for the test bed"> |
 |:---:|:---:|
 | IoT device setup | System Architecture for the test bed |
+
+## Data
+
+| <img src="/Images/data.PNG" width="436px" alt="Data recorded from IoT">  | <img src="/Images/norm.PNG" width="436px" alt="Normalized data"> |
+|:---:|:---:|
+| Data recorded from IoT | Normalized data |
