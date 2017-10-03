@@ -7,3 +7,6 @@
  - Implemented <b>KNN Algorithm</b> to learn the pattern in the sensor data, which has been used to recognize the user activity.
  
 ## Architecture and IoT setup
+| <img src="/Images/Pi Setup.jpg" width="250px" alt="IoT">  | <img src="/Images/Arch.PNG" width="622px" alt="Architecture"> |
+|:---:|:---:|
+| IoT device setup | System Architecture for the test bed |
