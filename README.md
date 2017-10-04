@@ -33,3 +33,47 @@ The following four classes have been identified suitable for the problem.
 
 ## Sensor Readings and Activity Patterns
 
+### Light Sensor
+ - The light sensor provides us the luminosity in the environment. 
+ - It is fixed to the system monitor, which has been used to infer whether the system monitor is ON / OFF. 
+ - Assuming each individual in the lab has an independent system, we can use this light sensor information to infer,
+    1) When did the individual start working each day
+    2) What is the total duration of working time, each day
+
+<img src="/Images/light.png" alt="Light Sensor Reading">
+
+### Ping Sensor
+ - Raspberry Pi is used to trigger the Ping sensor to send an ultrasonic pulse.
+ - The pulse waves bounce off from any nearby objects and some are reflected back to the sensor.
+ - The sensor detects these return waves and measures the time gap between the trigger and returned pulse.
+ - This information will be utilized to identify, if there is any human in-front of the system.
+ 
+<img src="/Images/ping.png" alt="Ping Sensor Reading">
+
+### PIR Sensor
+ - Ping sensor cannot differentiate an object / chair from a human being.
+ - PIR sensor can detects changes in the amount of infrared radiation it receives.
+ - The infrared heat emitted by the human body is used to detect the motion of a human being before the system.
+
+<img src="/Images/pir.png" alt="PIR Sensor Reading">
+
+## Sitting Activity Sensor Data Analysis
+ - SITTING activity cannot be recognized only with the help of PING sensor, due to the interruption of the PING values because of other objects like chair. 
+ - Hence, PIR and PING is used as a combination to track this activity.
+ - If we analyse the data, we can infer that the PIR values show human motion from time-step 10-20 and the PING reading has dropped down ultimately at 22, indicating some person has come-in and sat before the system.
+
+<img src="/Images/sitting.png" alt="Output Analysis for Sitting activity">
+
+## Running the algorithm
+ - Clone the repository and retain the same folder structure with the dataset in place.
+ - Execute the following command.
+```
+python knn.py
+```
+## Result
+ - The data collected from the IoT device is manually annotated.
+ - Raw data has been normalized to feed to the algorithm.
+ - The KNN algorithm has been implemented to identify the pattern in the sensor data and recognize the activity.
+ - The following is a snapshot of the KNN result.
+
+<img src="/Images/Knn Result.PNG" alt="K-NN Recognition results">
