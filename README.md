@@ -15,8 +15,21 @@
 |:---:|:---:|
 | IoT device setup | System Architecture for the test bed |
 
+## Activity Classes
+The following four classes have been identified suitable for the problem.
+1) Sitting + Screen ON
+2) Idle + Screen ON
+3) Sitting + Screen OFF
+4) Idle + Screen OFF
+
 ## Data
+
+ - The data has been collected for 24 hours each day and it has been manually annotated.
+ - The following is the snapshot of the readings from LIGHT, PING and PIR sensor, during the beginning of SITTING activity.
 
 | <img src="/Images/data.PNG" width="436px" alt="Data recorded from IoT">  | <img src="/Images/norm.PNG" width="436px" alt="Normalized data"> |
 |:---:|:---:|
-| Data recorded from IoT | Normalized data |
+| Data recorded from IoT - Annotated | Normalized data |
+
+## Sensor Readings and Activity Patterns
+
